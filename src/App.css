@@ -1,10 +1,3 @@
-/* 🔥 Aísla completamente los estilos de Amplify UI */
-.auth-isolated, 
-.auth-isolated * {
-  all: unset;
-  all: revert; /* restablece los estilos a su estado normal */
-  box-sizing: border-box;
-}
 #root {
   max-width: 1280px;
   margin: 0 auto;

@@ -23,11 +23,11 @@ function App() {
   }
 
   return (
-    <div className="auth-isolated">
       <Authenticator >
         {({ signOut, user }) => (
           <main>
             <h1>My todos</h1>
+            <p>Hola {user?.username}</p>
             <button onClick={createTodo}>+ new</button>
             <ul>
               {todos.map((todo) => (
@@ -47,7 +47,6 @@ function App() {
           </main>
         )}
       </Authenticator>
-    </div>
   );
 
 }
